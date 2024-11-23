@@ -66,15 +66,15 @@ static const char sep[] = " | ";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-  { run_command,"󰓃 %s ","pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}'" },
+  { run_command,"| 󰓃 %s ","pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}'" },
   { battery_state, "| %s"    , "BAT0" },
   { battery_perc,  " 󰁹 %s%% ", "BAT0" },
   { cpu_perc, " |  %s%%",NULL  },
   { ram_perc, " |  %s%%",NULL },
   { disk_free," | 󰋊 %sB", "/home"  },
-  { disk_free," | 󰋊 %sB", "/home/anon/external/"  },
+//  { disk_free," | 󰋊 %sB", "/home/anon/external/"  },
   { datetime, " | 󰥔%s |",           " %I:%M" },
-  { ipv4, " 󰩟 %s ",           "wlp0s21f0u4i2" },
-  { uptime, "|  %s",NULL },
+//  { ipv4, " 󰩟 %s ",           "wlp0s21f0u4i2" },
+//  { uptime, "|  %s",NULL },
 //  { run_command, "|   %s ",         "bash ~/.dwm/temp.sh" },
 };
